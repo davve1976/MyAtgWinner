@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Mighty Turbo",
+    "trainer": "Tränare A",
+    "driver": { "name": "Örjan Kihlström", "rating": 5 },
+    "lastRaces": [
+      { "track": "Solvalla", "distanceMeters": 2140, "startPosition": 4, "finishPosition": 1, "timeInMs": 75000, "gallop": false },
+      { "track": "Romme",    "distanceMeters": 2140, "startPosition": 5, "finishPosition": 2, "timeInMs": 75500, "gallop": false },
+      { "track": "Åby",      "distanceMeters": 1640, "startPosition": 2, "finishPosition": 5, "timeInMs": 73000, "gallop": true }
+    ]
+  },
+  {
+    "name": "Dark Rocket",
+    "trainer": "Tränare B",
+    "driver": { "name": "Björn Goop", "rating": 5 },
+    "last
+
+

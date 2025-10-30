@@ -5,25 +5,22 @@ import org.example.analysis.RaceAnalyzer.EntryScore;
 import org.example.domain.*;
 
 import java.util.List;
+import java.util.Map;
 
-/**
- * Demo:
- *  - bygger upp en fiktiv omgång
- *  - rankar hästar i första loppet
- *  - skriver ut topplistan.
- *
- * Detta blir din startpunkt. Sen kan du koppla på riktig data.
- */
 public class WeekendSystemBuilder {
 
     public static void main(String[] args) {
+        // === 1. Läs in kuskbetyg ===
+        Map<String, Driver> driverMap = DriverLoader.loadDrivers();
+        System.out.println("Läste in " + driverMap.size() + " kuskar från drivers.json");
 
-        // 1. Dina kuskar med egna ratings
-        Driver kilstrom = new Driver("Örjan Kihlström", 5);
-        Driver goop     = new Driver("Björn Goop", 5);
-        Driver random   = new Driver("Olle Okänd", 2);
+        // === 2. Hämta kuskar med lookup ===
+        Driver kilstrom = DriverLoader.find(driverMap, "Örjan Kihlström");
+        Driver goop     = DriverLoader.find(driverMap, "Björn Goop");
+        Driver random   = DriverLoader.find(driverMap, "Olle Okänd");
 
-        // 2. Bygg hästar med senaste lopp
+        // Resten av koden som tidigare...
+        // 2. Bygg hästar
         Horse horse1 = new Horse(
                 "Mighty Turbo",
                 "Tränare A",

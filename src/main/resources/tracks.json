@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Solvalla",
+    "stretchLengthMeters": 196,
+    "isTightTrack": false
+  },
+  {
+    "name": "Åby",
+    "stretchLengthMeters": 180,
+    "isTightTrack": false
+  },
+  {
+    "name": "Bergsåker",
+    "stretchLengthMeters": 200,
+    "isTightTrack": false
+  },
+  {
+    "name": "Färjestad",
+    "stretchLengthMeters": 177,
+    "isTightTrack": true
+  },
+  {
+    "name": "Romme",
+    "stretchLengthMeters": 205,
+    "isTightTrack": false
+  },
+  {
+    "name": "Bollnäs",
+    "stretchLengthMeters": 207,
+    "isTightTrack": false
+  }
+]
